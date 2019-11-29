@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/j1908?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 711504
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+
+mybatis:
+  type-aliases-package: com.qf.pojo
+  mapper-locations: classpath:mapper/*.xml
